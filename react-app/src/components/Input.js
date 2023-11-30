@@ -1,4 +1,3 @@
-import './App.css';
 const Input = ({id,label,setValue,value,required,type,placeholder}) =>{
     return <label htmlFor={id}>
         {label} <br />

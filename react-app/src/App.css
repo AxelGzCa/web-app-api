@@ -1,3 +1,5 @@
+/* App.css */
+
 /* Reset de estilos para quitar márgenes y rellenos predeterminados */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
@@ -17,14 +19,13 @@ body {
   margin: 0 auto;
 }
 
-/* Estilo para el encabezado principal */
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #007bff;
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
 }
 
-/* Estilo para la barra de navegación */
 nav {
   background-color: #0056b3;
   padding: 10px;
@@ -38,19 +39,16 @@ nav a {
   font-size: 18px;
 }
 
-/* Estilo para las secciones de la aplicación */
 section {
   margin: 20px 0;
 }
 
-/* Estilo para la lista de productos en Products */
-ul {
+.product-list {
   list-style: none;
   padding: 0;
 }
 
-/* Estilo para los elementos de la lista de productos en Products */
-li {
+.product {
   background-color: #fff;
   margin-bottom: 15px;
   padding: 15px;
@@ -58,8 +56,7 @@ li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para los botones de editar y eliminar en Products */
-li button {
+.product button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -70,12 +67,11 @@ li button {
   margin-left: 10px;
 }
 
-li button:hover {
+.product button:hover {
   background-color: #0056b3;
 }
 
-/* Estilo para el diálogo de eliminación en Products */
-dialog {
+.dialog {
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -83,8 +79,7 @@ dialog {
   text-align: center;
 }
 
-/* Estilo para los botones dentro del diálogo de eliminación en Products */
-dialog button {
+.dialog button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -95,41 +90,10 @@ dialog button {
   margin-left: 10px;
 }
 
-dialog button:hover {
+.dialog button:hover {
   background-color: #0056b3;
 }
 
-/* Estilo para el formulario de AddProduct y EditProduct */
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para los campos de entrada en AddProduct y EditProduct */
-fieldset {
-  border: none;
-}
-
-/* Estilo para los botones de agregar y editar en AddProduct y EditProduct */
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Estilo para el pie de página */
 footer {
   background-color: #007bff;
   color: #fff;
@@ -143,5 +107,46 @@ footer {
 @media (max-width: 768px) {
   .container {
     width: 90%;
+  }
+}
+
+/* Remaining styles from your existing App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
