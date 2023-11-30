@@ -1,3 +1,4 @@
+import './App.css';
 import { useLayoutEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
 const Products = ({newNotification}) => {
